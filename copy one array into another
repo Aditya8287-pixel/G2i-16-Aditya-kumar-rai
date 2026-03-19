@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+    int source_array[] = {10, 20, 30, 40, 50};
+    int size = sizeof(source_array) / sizeof(source_array[0]);
+    int destination_array[size]; 
+    for (int i = 0; i < size; i++) {
+        destination_array[i] = source_array[i];
+    }
+    printf("Source array elements: ");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", source_array[i]);
+    }
+
+    printf("\nDestination array elements: ");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", destination_array[i]);
+    }
+
+    return 0;
+}
